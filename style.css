@@ -1,34 +1,78 @@
 body {
     width: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 .wrap {
     width: 100%;
     margin: 0 auto;
 }
-ul li {
-    list-style: none;
+.home {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: url('./lilly_homepage/images/mainBg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
-a {
-    text-decoration: none;
+
+.home h1#title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40% );
+    font-size: 100px;
+    color: #fff;
+    margin: 0;
+}
+
+.home img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.home img#planetLeft {
+    width: 22%;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    transform: translate(0, -25%);
+}
+.home img#planetRight {
+    width: 25%;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    transform: translate(0, -25%);
+}
+
+.home img#rocket {
+    width: 12%;
+    position: absolute;
+    bottom: 60%;
+    right: 60%;
+    transform: translate(-50%, -50% );
+}
+
+.sec {
+    position: relative;
+    z-index: 100;
+    padding: 50px;
+}
+
+.sec h2 {
+    font-size: 20px;
+    color: palevioletred;
+    font-weight: bold;
+}
+
+.sec p {
+    font-size: 14px;
     color: #000;
-}
-.top {
-    width: 100%;
-    text-align: center;
-}
-h1 {
-    font-size: 40px;
-    color: rgb(231, 95, 141);
-}
-img {
-    width: 50%;
-    margin: 0 auto;
-}
-.bottom {
-    width: 100%;
-    text-align: center;
-}
-h2 a {
-    color: rgb(231, 95, 141);
+    font-weight: normal;
 }
