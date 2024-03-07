@@ -1,12 +1,30 @@
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
     width: 100%;
     margin: 0 auto;
+    font-family: 'NanumSquareNeo';
+    /* 수정 필요 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
 }
+
 .wrap {
     width: 100%;
     margin: 0 auto;
 }
+
 .home {
     position: relative;
     overflow: hidden;
@@ -21,12 +39,51 @@ body {
 
 .home h1#title {
     position: absolute;
-    top: 40%;
+    z-index: 50;
+    top: 28%;
     left: 50%;
-    transform: translate(-50%, -40% );
-    font-size: 100px;
+    transform: translate(-50%, -28%);
+    font-size: 8rem;
     color: #fff;
     margin: 0;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 900;
+    color: #FEBC44;
+    text-shadow: 0 0 4px #540a6750 ;
+    line-height: 1.1;
+}
+
+/* .home h2#subTitle {
+    position: absolute;
+    z-index: 50;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -38%);
+    font-size: 6rem;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 600;
+} */
+
+.home .subTitle {
+    font-size: 6rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.home p#text {
+    position: absolute;
+    z-index: 50;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -48%);
+    font-size: 2rem;
+    color: #fff;
+    white-space: nowrap;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .home img {
@@ -43,6 +100,7 @@ body {
     left: 0;
     transform: translate(0, -25%);
 }
+
 .home img#planetRight {
     width: 25%;
     position: absolute;
@@ -54,9 +112,17 @@ body {
 .home img#rocket {
     width: 12%;
     position: absolute;
-    bottom: 60%;
-    right: 60%;
-    transform: translate(-50%, -50% );
+    bottom: 65%;
+    right: 55%;
+    transform: translate(-55%, -65%);
+}
+
+.home img#mainPlanet {
+    z-index: 50;
+}
+
+.home img#cloud {
+    z-index: 100;
 }
 
 .sec {
@@ -65,10 +131,14 @@ body {
     padding: 50px;
 }
 
+.sec .secWrap {
+    /* background-color: #febc44; */
+}
+
 .sec h2 {
-    font-size: 20px;
-    color: palevioletred;
-    font-weight: bold;
+    font-size: 6rem;
+    font-weight: 900;
+    text-align: center;
 }
 
 .sec p {
