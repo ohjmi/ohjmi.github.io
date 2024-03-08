@@ -51,21 +51,8 @@ body {
     font-weight: 900;
     color: #FEBC44;
     text-shadow: 0 0 4px #540a6750 ;
-    line-height: 1.1;
+    line-height: 1.3;
 }
-
-/* .home h2#subTitle {
-    position: absolute;
-    z-index: 50;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -38%);
-    font-size: 6rem;
-    color: #fff;
-    white-space: nowrap;
-    text-align: center;
-    font-weight: 600;
-} */
 
 .home .subTitle {
     font-size: 6rem;
@@ -74,15 +61,17 @@ body {
 }
 
 .home p#text {
-    position: absolute;
+    /* position: absolute;
     z-index: 50;
-    top: 48%;
+    margin: 100 0; */
+    /* top: 47%;
     left: 50%;
-    transform: translate(-50%, -48%);
+    transform: translate(-50%, -47%); */
+    margin-top: 20px;
     font-size: 2rem;
     color: #fff;
     white-space: nowrap;
-    line-height: 1.5;
+    line-height: 1.6;
     text-align: center;
 }
 
@@ -125,20 +114,63 @@ body {
     z-index: 100;
 }
 
+.home img#cloudLeft {
+    width: 32%;
+    position: absolute;
+    left: 0;
+    z-index: 60;
+}
+
+.home img#cloudRight {
+    width: 32%;
+    position: absolute;
+    right: 0;
+    z-index: 60;
+}
+
 .sec {
     position: relative;
     z-index: 100;
-    padding: 50px;
+    /* padding: 200px; */
+    padding-top: 100px;
+    background: url('./lilly_homepage/images/mainBg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .sec .secWrap {
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 100px 0 100px;
     /* background-color: #febc44; */
+    background-color: #fff;
 }
 
 .sec h2 {
     font-size: 6rem;
     font-weight: 900;
     text-align: center;
+}
+
+.sec .secWrap .profileWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec .profilePhoto {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sec .profilePhoto img {
+    width: 65%;
+}
+
+.sec .secWrap .profileWrap .profileCont {
+    font-size: 3rem;
 }
 
 .sec p {
