@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff') format('woff');
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'NanumSquareNeo';
+    /* 수정 필요 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(193,159,210,1) 10%, rgba(214,184,221,1) 100%);
+}
+
+.home #textWrap {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    transform: translate(-30%, -40%);
+    z-index: 200;
+    text-align: left;
+}
+
+.home .title {
+    font-size: 8rem;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    font-weight: 900;
+    color: #000;
+    text-shadow: 0 0 4px #540a6750 ;
+}
+
+.home .sub-title {
+    font-size: 6rem;
+    color: #000;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.home .intro-text {
+    margin-top: 20px;
+    font-size: 3rem;
+    color: #000;
+    white-space: nowrap;
+    line-height: 1.6;
+}
+
+/* .home .text-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 150;
+    width: 80%;
+    height: 750px;
+    background-color: #ffffff56;
+    border-radius: 20px;
+} */
+
+.home img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.home img#starLeft {
+    width: 10%;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    transform: translate(-5%, -20%);
+}
+
+.home img#starRight {
+    width: 10%;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    transform: translate(-10%, -10%);
+}
+
+.home img#mainCharacter {
+    width: 42%;
+    left: 92%;
+    bottom: 10%;
+    transform: translate(-92%, -10%);
+    z-index: 60;
+}
+
+.home img#cloud {
+    z-index: 100;
+}
+
+.home img#cloudLeft {
+    width: 25%;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    transform: translate(0, -5%);
+    z-index: 50;
+}
+
+.home img#cloudRight {
+    width: 25%;
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+    transform: translate(0, -5%);
+    z-index: 50;
+}
+
+.introduce {
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: #1D1F45; */
+    /* background-color: #0a051e; */
+    /* background: rgb(32,28,78);
+    background: radial-gradient(circle, rgba(32,28,78,1) 0%, rgba(13,16,45,1) 100%); */
+    position: relative;
+    z-index: 100;
+    /* padding: 200px; */
+    /* padding-top: 100px; */
+    background: url('./lilly_homepage/images/mainBg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.introduce .introWrap {
+    width: 60%;
+    margin: 0 auto;
+    padding: 100px 100px 0 100px;
+    /* background-color: #febc44; */
+    /* background-color: #fff;
+    background-color: #0e062f; */
+}
+
+.introduce h2 {
+    font-size: 6rem;
+    font-weight: 900;
+    /* text-align: center; */
+    color: #CF1CFE;
+}
+
+.introduce .introWrap .profileWrap {
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.introduce .profilePhoto {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.introduce .profilePhoto img {
+    width: 80%;
+}
+
+.introduce .introWrap .profileWrap .profileCont {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 1.7;
+    /* color: #000; */
+}
+
+.introduce .introWrap .profileWrap .profileCont li:nth-child(2) {
+    margin-top: 20px;
+}
+
+hr {
+    width: 70%;
+    height: 1px;
+    color: #fff;
+}
+
+.work {
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: #1D1F45; */
+    /* background-color: #0a051e; */
+    /* background: rgb(32,28,78);
+    background: radial-gradient(circle, rgba(32,28,78,1) 0%, rgba(13,16,45,1) 100%); */
+    position: relative;
+    z-index: 100;
+    /* padding: 200px; */
+    /* padding-top: 100px; */
+    background: url('./lilly_homepage/images/mainBg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.work .workWrap {
+    width: 60%;
+    margin: 0 auto;
+    padding: 100px 100px 0 100px;
+    /* background-color: #febc44; */
+    /* background-color: #fff;
+    background-color: #0e062f; */
+}
+
+.work h2 {
+    font-size: 6rem;
+    font-weight: 900;
+    /* text-align: center; */
+    color: #CF1CFE;
+}
+
+.work .workFlexWrap {
+    display: flex;
+    align-items: first baseline;
+}
+
+.workLeft {
+    margin-top: 40px;
+    margin-right: 20px;
+    line-height: 2;
+}
+
+.workLeft .company {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+} 
+
+.workLeft .jobTitle {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+} 
+
+.workLeft .date {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+} 
+
+.workRight {
+    margin-left: 20px;
+    line-height: 1.7;
+}
+
+.workRight .job {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.workRight .workCont {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+footer {
+    height: 200px;
+    background-color: #CF1CFE;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    line-height: 200px;
+}
