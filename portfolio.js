@@ -8,8 +8,10 @@ const cloudRight = document.getElementById('cloudRight');
 
 window.addEventListener('scroll', () => {
   const value = window.scrollY;
+  const opacityValue = Math.max(0, Math.min(1, 1 - value * 0.002));
 
-  textWrap.style.marginLeft = -value * 3 + 'px';
+  textWrap.style.marginTop = value * 1 + 'px';
+  // textWrap.style.opacity = opacityValue;
   mainCharacter.style.marginLeft = value * 2 + 'px';
   starLeft.style.marginLeft = -value + 'px';
   starLeft.style.marginTop = -value + 'px';
