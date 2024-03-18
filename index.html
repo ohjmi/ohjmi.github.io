@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./portfolio.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
   <title>Jeongmi's Portfolio</title>
 </head>
 
@@ -112,10 +114,26 @@
       <h2 class="sec-title">Project</h2>
       <div class="sec-content">
         <div class="content-left">
-          <div class="img-box"></div>
+          <div class="slide">
+            <div class="img-box">
+              <img src="./lilly_homepage/images/ango1.png" alt="이미지1">
+              <img src="./lilly_homepage/images/ango2.png" alt="이미지2">
+              <img src="./lilly_homepage/images/ango3.png" alt="이미지3">
+              <img src="./lilly_homepage/images/ango4.png" alt="이미지4">
+              <img src="./lilly_homepage/images/ango4.png" alt="이미지5">
+              <img src="./lilly_homepage/images/ango6.png" alt="이미지6">
+              <img src="./lilly_homepage/images/ango7.png" alt="이미지7">
+              <img src="./lilly_homepage/images/ango8.png" alt="이미지8">
+            </div>
+          </div>
+          <div class="slide-btn">
+            <button class="prev" onclick="prevSlide()"><</button>
+            <p class="img-count">1/1</p>
+            <button class="next" onclick="nextSlide()">></button>
+          </div>
         </div>
         <div class="content-right">
-          <h3>Ango</h3>
+          <h3>앉고싶어</h3>
           <p>2023.12 - 2024.02 (4인 팀 프로젝트)</p>
           <div class="summary">
             <h4>Summary</h4>
@@ -147,7 +165,7 @@
             <div class="project-info">
               <p class="info-title">Github</p>
               <p class="info-text">
-                <a href="github.com/SesacWannaSIT/WannaSIT">
+                <a href="https://github.com/SesacWannaSIT/WannaSIT">
                   github.com/SesacWannaSIT/WannaSIT
                 </a>
               </p>
@@ -256,13 +274,37 @@
         </div>
       </div>
     </section>
+    <hr class="divider">
+    <section class="certificate sec-wrap">
+      <h2 class="sec-title">certificate</h2>
+      <div class="certificate-list">
+        <ul>
+          <li>정보처리산업기사</li>
+          <li>2024.03 필기 취득</li>
+        </ul>
+        <ul>
+          <li>네트워크관리사</li>
+          <li>2023.10 취득</li>
+        </ul>
+        <ul>
+          <li>웹디자인기능사</li>
+          <li>2022.04 취득</li>
+        </ul>
+        <ul>
+          <li>컴퓨터그래픽스운용기능사</li>
+          <li>2021.07 취득</li>
+        </ul>
+      </div>
+    </section>
   </div>
   <footer>
-    <p>Copyright &copy 2024 OHJEONGMI ALL RIGHTS RESERVED</p>
-    <ul class="contact">
-      <li><a href="ohjmi@naver.com"><img src="" alt=""></a></li>
-      <li><a href="ohjmi@naver.com"><img src="" alt=""></a></li>
-    </ul>
+    <div class="footer-content">
+      <div class="contact">
+        <a href="mailto:'ohjmi@naver.com'"><img src="./lilly_homepage/images/email.svg" alt="이메일 아이콘"></a>
+        <a href="https://github.com/ohjmi"><img src="./lilly_homepage/images/github.svg" alt="깃허브 아이콘"></a>
+      </div>
+      <p>Copyright &copy 2024 OHJEONGMI ALL RIGHTS RESERVED</p>
+    </div>
   </footer>
   <script src="./portfolio.js"></script>
 </body>
