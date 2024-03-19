@@ -4,10 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="./images/">
+  <meta property="og:title" content="정미의 포트폴리오, 반응형웹">
+  <meta property="og:description" content="프론트엔드 개발자 포트폴리오 웹사이트, 반응형웹">
+  <meta property="og:url" content="프로젝트 url 주소">
+  <meta property="og:locale" content="한국">
+  <meta property="og:site_name" content="">
+  <meta property="og:type" content="웹사이트">
+  <!-- Favicon PC / Mobile-->
+  <link rel="shorcut icon" href="./images/favicon/fv32.png">
+  <link rel="shorcut icon" href="./images/favicon/fv180.png">
+  <!-- CSS -->
   <link rel="stylesheet" href="./reset.css">
-  <link rel="stylesheet" href="./portfolio.css">
+  <!-- GSAP CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <!-- 프로젝트 페이지 CSS -->
+  <link rel="stylesheet" href="./portfolio.css">
+  
   <title>Jeongmi's Portfolio</title>
 </head>
 
@@ -29,11 +43,16 @@
           주도적인 업무 환경에서 지속적인 노력을 통해 성장을 하고자 합니다.
         </p>
       </div>
-      <img src="/lilly_homepage/images/starLeft.svg" id="starLeft" alt="왼쪽 별 이미지">
-      <img src="/lilly_homepage/images/starRight.svg" id="starRight" alt="오른쪽 별 이미지">
-      <img src="/lilly_homepage/images/mainCharacter.svg" id="mainCharacter" alt="메인 캐릭터 이미지">
-      <img src="/lilly_homepage/images/cloudLeft.svg" id="cloudLeft" alt="왼쪽구름 이미지">
-      <img src="/lilly_homepage/images/cloudRight.svg" id="cloudRight" alt="오른쪽구름 이미지">
+      <img src="./images/home/starLeft.svg" id="starLeft" alt="왼쪽 별 이미지">
+      <img src="./images/home/starRight.svg" id="starRight" alt="오른쪽 별 이미지">
+      <img src="./images/home/mainCharacter.svg" id="mainCharacter" alt="메인 캐릭터 이미지">
+      <img src="./images/home/cloudLeft.svg" id="cloudLeft" alt="왼쪽구름 이미지">
+      <img src="./images/home/cloudRight.svg" id="cloudRight" alt="오른쪽구름 이미지">
+      <div id="scroll-wrap">
+        <img src="./images/icon/mouse.svg" class="scroll-mouse" alt="마우스 이미지">
+        <p class="scroll-txt">scroll down</p>
+        <img src="./images/icon/arrow-down.svg" class="arrow-down" alt="아래 화살표 이미지">
+      </div>
     </section>
     <section class="work-experience sec-wrap">
       <h2 class="sec-title">Work Experience</h2>
@@ -116,20 +135,20 @@
         <div class="content-left">
           <div class="slide">
             <div class="img-box">
-              <img src="./lilly_homepage/images/ango1.png" alt="이미지1">
-              <img src="./lilly_homepage/images/ango2.png" alt="이미지2">
-              <img src="./lilly_homepage/images/ango3.png" alt="이미지3">
-              <img src="./lilly_homepage/images/ango4.png" alt="이미지4">
-              <img src="./lilly_homepage/images/ango4.png" alt="이미지5">
-              <img src="./lilly_homepage/images/ango6.png" alt="이미지6">
-              <img src="./lilly_homepage/images/ango7.png" alt="이미지7">
-              <img src="./lilly_homepage/images/ango8.png" alt="이미지8">
+              <img src="./images/project/ango1.svg" alt="이미지1">
+              <img src="./images/project/ango2.svg" alt="이미지2">
+              <img src="./images/project/ango3.svg" alt="이미지3">
+              <img src="./images/project/ango4.svg" alt="이미지4">
+              <img src="./images/project/ango5.svg" alt="이미지5">
+              <img src="./images/project/ango6.svg" alt="이미지6">
+              <img src="./images/project/ango7.svg" alt="이미지7">
+              <img src="./images/project/ango8.svg" alt="이미지8">
             </div>
           </div>
           <div class="slide-btn">
-            <button class="prev" onclick="prevSlide()"><</button>
+            <button class="prev" onclick="prevSlide()"><img src="./images/icon/arrow-left.svg" alt="왼쪽 버튼"></button>
             <p class="img-count">1/1</p>
-            <button class="next" onclick="nextSlide()">></button>
+            <button class="next" onclick="nextSlide()"><img src="./images/icon/arrow-right.svg" alt="오른쪽 버튼"></button>
           </div>
         </div>
         <div class="content-right">
@@ -300,8 +319,8 @@
   <footer>
     <div class="footer-content">
       <div class="contact">
-        <a href="mailto:'ohjmi@naver.com'"><img src="./lilly_homepage/images/email.svg" alt="이메일 아이콘"></a>
-        <a href="https://github.com/ohjmi"><img src="./lilly_homepage/images/github.svg" alt="깃허브 아이콘"></a>
+        <a href="mailto:'ohjmi@naver.com'"><img src="./images/icon/email.svg" alt="이메일 아이콘"></a>
+        <a href="https://github.com/ohjmi"><img src="./images/icon/github.svg" alt="깃허브 아이콘"></a>
       </div>
       <p>Copyright &copy 2024 OHJEONGMI ALL RIGHTS RESERVED</p>
     </div>
