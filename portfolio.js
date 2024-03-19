@@ -76,12 +76,28 @@ function setupAnimations() {
 // 초기 애니메이션 설정
 setupAnimations();
 
-// 뷰포트 크기 변경 감지 및 애니메이션 매개변수 조정
-window.addEventListener('resize', function() {
-  location.reload()
+
+let lastWidth = window.innerWidth; // 이전 너비 저장
+let delay = 1000; // 딜레이 설정
+let timer = null; // 타이머 초기화
+
+window.addEventListener('resize', function(){
+	clearTimeout(timer); // 기존 타이머 초기화
+	timer = setTimeout(function(){
+		console.log('resize event!');
+		// 너비가 변경되었는지 확인하고, 높이는 변경되지 않았는지 확인
+		if (window.innerWidth !== lastWidth) {
+			// 너비만 변경되었다면 setupAnimations 함수 실행
+			setupAnimations();
+
+			// 현재 너비를 저장하여 다음 비교를 위해 업데이트
+			lastWidth = window.innerWidth;
+		}
+		// 높이나 너비가 변경되면 이전 높이와 너비를 업데이트
+		lastHeight = window.innerHeight;
+
+	}, delay);
 });
-
-
 
 let slides = document.querySelectorAll(".img-box > img");
 let prev = document.querySelector(".back");
