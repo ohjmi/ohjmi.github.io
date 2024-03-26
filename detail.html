@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로젝트 상세페이지</title>
+</head>
+
+<body>
+  <p>
+    햄버거 메뉴
+    햄버거 메뉴 이미지를 사용하지 않고 코드로 이미지 구현하여 클릭 시 메뉴가 나오고 메뉴가 닫기 버튼으로 바뀌는 애니메이션 구현
+
+
+    추천 호차 순위 페이지
+    - 출발지와 도착지 값이 변경될 때마다 useState와 useEffect 훅을 사용해 API로부터 필요한 데이터를 호출하고 응답받은 데이터로 상태를 업데이트
+    - useNavigate 훅(React Router DOM 라이브러리)을 사용해 특정 호차 클릭 시 쿼리 파라미터를 포함하여 해당 호차의
+    상세페이지로 이동하도록 구현
+
+    게시글 목록
+    useState를 이용해 게시글 목록(posts), 페이지 번호(pageNum), 총 페이지 수(totalPages), 로딩 상태(isLoading), 검색 쿼리(searchQuery) 상태 관리
+    랜더링 속도나 과부하 방지를 위해 useEffect와 fetchPosts 함수를 활용하여 게시글 데이터를 5개씩 API로부터 호출하여 랜더링
+    스크롤 이벤트 리스너를 추가하여 해당 영역 페이지 끝에 도달하면 다음 페이지의 게시글을 요청하여 호출 과부하?를 줄이고 무한 스크롤 구현
+    게시글 제목을 통한 검색 기능 구현, 검색어 변경 시 페이지 번호를 1로 초기화 설정
+
+
+    게시글 등록 페이지
+    useState를 통해 제목(title), 내용(content), 모달(ModalOpen) 상태 관리 및 업데이트
+    useNavigate를 사용하여 게시글 등록 성공 후 게시판 목록 페이지(/boards)로 이동하도록 구현
+    API를 통해 게시글을 등록하고 성공 시 상태를 초기화한 후 게시판 목록 페이지로 이동하도록 구현
+    입력 폼에 내용이 작성 됐을 경우에만 사용자 확인 모달 팝업 이벤트 처리
+
+
+    게시글 상세페이지
+    - 수정
+    - 삭제
+    - 게시글 추천 수
+    - 댓글 쓰기
+    - 댓글 삭제
+
+  </p>
+</body>
+
+</html>
