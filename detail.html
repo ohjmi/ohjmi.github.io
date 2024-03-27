@@ -13,129 +13,170 @@
 
 <body>
   <section class="my-part sec-wrap">
-    <h1 class="sec-title">What did i do</h1>
+    <h1 class="sec-title">What did</h1>
     <div class="part-summary">
       <p>
-        처음으로 Git을 사용해 다른 사람들과 협업하며, 추천 호차 순위, 
-        탑승 칸 추천, 게시판의 CRUD 기능, 댓글 및 댓글 좋아요 기능을 구현했습니다. 
+        Git을 사용해 다른 사람들과 협업하며, 추천 호차 순위,
+        탑승 칸 추천, 게시판의 CRUD 기능, 댓글 및 댓글 좋아요 기능을 구현했습니다.
         이 과정에서 컴포넌트와 React hook에 대한 개념을 확립하고, 서버로부터
         API 호출을 통해 받은 데이터를 화면에 렌더링하는 과정을 통해 데이터 바인딩과
-        REST API 통신에 익숙해졌습니다. 이를 통해 동적 웹사이트를 구축하는데 필요한 
+        REST API 통신에 익숙해졌습니다. 이를 통해 동적 웹사이트를 구축하는데 필요한
         실질적인 지식을 경험해 볼 수 있었습니다.
       </p>
     </div>
     <div class="sec-content">
       <div class="part-list">
         <h3>[ 추천 호차 페이지 ]</h3>
-        <ul>
-          <h4>상태관리</h4>
-          <li>
-            useState와 useEffect 훅을 활용해, 출발지와 도착지 값이 변경될 때마다 필요한 데이터를 API로부터 호출하고,
-            응답 받은 데이터로 상태를 업데이트하여 화면을 랜더링했습니다.
-          </li>
-        </ul>
-        <ul>
-          <h4>페이지 이동</h4>
-          <li>
-            React Router DOM 라이브러리의 useNavigate 훅을 사용하여 사용자가 특정 호차를 선택했을 때, 
-            쿼리 파라미터와 함께 해당 호차의 상세 페이지로 이동할 수 있도록 했습니다.
-          </li>
-        </ul>
+        <div class="part-wrap">
+          <div class="part-left">
+            <img src="./images/project/mok1.svg" alt="추천 호차 페이지 이미지">
+          </div>
+          <div class="part-right">
+            <ul>
+              <h4>상태관리</h4>
+              <li>
+                useState와 useEffect 훅을 활용해, 출발지와 도착지 값이 변경될 때마다 필요한 데이터를 API로부터 호출하고,
+                응답 받은 데이터로 상태를 업데이트하여 화면을 랜더링했습니다.
+              </li>
+            </ul>
+            <ul>
+              <h4>페이지 이동</h4>
+              <li>
+                React Router DOM 라이브러리의 useNavigate 훅을 사용하여 사용자가 특정 호차를 선택했을 때,
+                쿼리 파라미터와 함께 해당 호차의 상세 페이지로 이동할 수 있도록 했습니다.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+      <hr class="divider">
       <div class="part-list">
         <h3>[ 게시글 목록 페이지 ]</h3>
-        <ul>
-          <h4>상태관리</h4>
-          <li>
-            useState를 이용해 게시글 목록(posts), 페이지 번호(pageNum), 총 페이지 수(totalPages),
-            로딩 상태(isLoading), 검색 쿼리(searchQuery)의 상태를 관리합니다.
-          </li>
-        </ul>
-        <ul>
-          <h4>게시글 검색</h4>
-          <li>
-            게시글 제목을 기준으로 검색할 수 있으며, 검색어 변경 시 페이지 번호를 1로 초기화 되도록 했습니다.
-          </li>
-        </ul>
-        <ul>
-          <h4>페이지네이션</h4>
-          <li>
-            초기 로딩 시간을 단축하고 클라이언트의 메모리 사용량을 줄이기 위해, 게시글 데이터를 페이지당 5개씩 랜더링 처리했습니다.
-          </li>
-        </ul>
-        <ul>
-          <h4>무한 스크롤</h4>
-          <li>
-            서버의 호출 과부하를 방지하기 위해, 스크롤 이벤트 리스너를 도입하여 사용자가 특정 영역에 도달했을 때에만
-            추가 페이지의 게시글을 요청하도록 했습니다.
-          </li>
-        </ul>
+        <div class="part-wrap">
+          <div class="part-left">
+            <img src="./images/project/mok2.svg" alt="게시글 목록 페이지 이미지">
+          </div>
+          <div class="part-right">
+            <ul>
+              <h4>상태관리</h4>
+              <li>
+                useState를 이용해 게시글 목록(posts), 페이지 번호(pageNum), 총 페이지 수(totalPages),
+                로딩 상태(isLoading), 검색 쿼리(searchQuery)의 상태를 관리합니다.
+              </li>
+            </ul>
+            <ul>
+              <h4>게시글 검색</h4>
+              <li>
+                게시글 제목을 기준으로 검색할 수 있으며, 검색어 변경 시 페이지 번호를 1로 초기화 되도록 했습니다.
+              </li>
+            </ul>
+            <ul>
+              <h4>페이지네이션</h4>
+              <li>
+                초기 로딩 시간을 단축하고 클라이언트의 메모리 사용량을 줄이기 위해, 게시글 데이터를 페이지당 5개씩 랜더링 처리했습니다.
+              </li>
+            </ul>
+            <ul>
+              <h4>무한 스크롤</h4>
+              <li>
+                서버의 호출 과부하를 방지하기 위해, 스크롤 이벤트 리스너를 도입하여 사용자가 특정 영역에 도달했을 때에만
+                추가 페이지의 게시글을 요청하도록 했습니다.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+      <hr class="divider">
       <div class="part-list">
         <h3>[ 게시글 등록 페이지 ]</h3>
-        <ul>
-          <h4>상태관리</h4>
-          <li>
-            useState를 통해 제목(title), 내용(content), 모달(ModalOpen) 의 상태를 관리힙니다.
-          </li>
-        </ul>
-        <ul>
-          <h4>페이지 이동</h4>
-          <li>
-            useNavigate를 사용하여 게시글 등록 성공 후 게시글 목록 페이지(/boards)로 이동하도록 했습니다.
-          </li>
-        </ul>
-        <ul>
-          <h4>이벤트 처리</h4>
-          <li>
-            입력 폼에 내용이 입력된 경우에 한해, 사용자 확인을 위한 모달 팝업이 나타나도록 했습니다.
-          </li>
-          <li>
-            API를 통해 게시글을 등록하고 성공 시에만 상태를 초기화한 후 게시글 목록 페이지로 이동하도록 했습니다.
-          </li>
-        </ul>
+        <div class="part-wrap">
+          <div class="part-left">
+            <img src="./images/project/mok3.svg" alt="게시글 등록 페이지 이미지">
+          </div>
+          <div class="part-right">
+            <ul>
+              <h4>상태관리</h4>
+              <li>
+                useState를 통해 제목(title), 내용(content), 모달(ModalOpen) 의 상태를 관리힙니다.
+              </li>
+            </ul>
+            <ul>
+              <h4>페이지 이동</h4>
+              <li>
+                useNavigate를 사용하여 게시글 등록 성공 후 게시글 목록 페이지(/boards)로 이동하도록 했습니다.
+              </li>
+            </ul>
+            <ul>
+              <h4>이벤트 처리</h4>
+              <li>
+                입력 폼에 내용이 입력된 경우에 한해, 사용자 확인을 위한 모달 팝업이 나타나도록 했습니다.
+              </li>
+              <li>
+                API를 통해 게시글을 등록하고 성공 시에만 상태를 초기화한 후 게시글 목록 페이지로 이동하도록 했습니다.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+      <hr class="divider">
       <div class="part-list">
         <h3>[ 게시글 상세페이지 ]</h3>
-        <ul>
-          <h4>게시글 수정 & 삭제</h4>
-          <li>
-            게시글의 작성자일 경우에만 삭제 및 수정 옵션을 제공하도록 했습니다.
-          </li>
-          <li>
-            navigate를 사용하여 수정 페이지로 이동할 때 게시글의 제목과 내용을 함께 가져갈 수 있도록 했습니다.
-          </li>
-          <li>
-            서버에 게시글 삭제를 요청한 후 삭제가 성공적으로 이루어지면 게시판 목록 페이지로 이동하도록 했습니다.
-          </li>
-        </ul>
-        <ul>
-          <h4>게시글 추천</h4>
-          <li>
-            게시글 추천 여부를 통해 추천과 추천 취소가 되도록 하였고, 이미지의 색상 변화와 추천 수를 통해 상태 변화를 알 수 있도록 하였습니다.
-          </li>
-        </ul>
-        <ul>
-          <h4>댓글 작성</h4>
-          <li>
-            등록 시 해당 페이지 상단에 댓글이 등록되도록 하였고,
-            등록 버튼 외에도 enter키를 통해서도 등록이 되도록 했습니다.
-          </li>
-        </ul>
-        <ul>
-          <h4>댓글 삭제</h4>
-          <li>
-            댓글 작성자일 경우에만 삭제 옵션을 제공하도록 했습니다.
-          </li>
-        </ul>
-        <ul>
-          <h4>댓글 추천</h4>
-          <li>
-            댓글 추천 여부를 통해 추천과 추천 취소가 되도록 하였고, 이미지의 색상 변화와 추천 수를 통해 상태 변화를 알 수 있도록 하였습니다.
-          </li>
-        </ul>
+        <div class="part-wrap">
+          <div class="part-left">
+            <img src="./images/project/mok4.svg" alt="게시글 상세페이지 이미지">
+          </div>
+          <div class="part-right">
+            <ul>
+              <h4>게시글 수정 & 삭제</h4>
+              <li>
+                게시글의 작성자일 경우에만 삭제 및 수정 옵션을 제공하도록 했습니다.
+              </li>
+              <li>
+                navigate를 사용하여 수정 페이지로 이동할 때 게시글의 제목과 내용을 함께 가져갈 수 있도록 했습니다.
+              </li>
+              <li>
+                서버에 게시글 삭제를 요청한 후 삭제가 성공적으로 이루어지면 게시판 목록 페이지로 이동하도록 했습니다.
+              </li>
+            </ul>
+            <ul>
+              <h4>게시글 추천</h4>
+              <li>
+                게시글 추천 여부를 통해 추천과 추천 취소가 되도록 하였고, 이미지의 색상 변화와 추천 수를 통해 상태 변화를 알 수 있도록 하였습니다.
+              </li>
+            </ul>
+            <ul>
+              <h4>댓글 작성</h4>
+              <li>
+                등록 시 해당 페이지 상단에 댓글이 등록되도록 하였고,
+                등록 버튼 외에도 enter키를 통해서도 등록이 되도록 했습니다.
+              </li>
+            </ul>
+            <ul>
+              <h4>댓글 삭제</h4>
+              <li>
+                댓글 작성자일 경우에만 삭제 옵션을 제공하도록 했습니다.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
+      <hr class="divider">
+      <div class="part-list">
+        <h3>[ 햄버거 메뉴 페이지 ]</h3>
+        <div class="part-wrap">
+          <div class="part-left">
+            <img src="./images/project/mok5.svg" alt="햄버거 메뉴 페이지 이미지">
+          </div>
+          <div class="part-right">
+            <ul>
+              <h4>애니메이션</h4>
+              <li>
+                이미지 대신 CSS로 햄버거 메뉴 아이콘을 구현했으며, 이를 클릭하면 닫기 버튼으로 변하는 애니메이션이 적용되도록 하였습니다.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
   </section>
 </body>
 
