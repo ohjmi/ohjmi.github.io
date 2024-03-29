@@ -251,6 +251,14 @@ body {
     margin-right: 4px;
 }
 
+.project .sec-content {
+    margin-bottom: 100px;
+}
+
+.project .sec-content:last-child{
+    margin-bottom: 0;
+}
+
 .project .sec-content .content-left .img-box {
     width: 100%;
     overflow: hidden;
@@ -519,14 +527,17 @@ footer p {
 
     .project .sec-content .content-left .img-box {
         width: 100%;
-        height: 630px;
-        overflow: auto;
         position: relative;
+        overflow: hidden;
         transition: 0.5s;
         background-color: #fff;
         text-align: center;
         border: 1px solid #eee;
         border-radius: 20px;
+    }
+
+    .project .sec-content .content-left .img-box img {
+        max-width: 100%;
     }
  }
 
@@ -755,14 +766,32 @@ footer p {
 
     .project .sec-content .content-left .img-box {
         width: 100%;
-        height: 630px;
-        overflow: auto;
         position: relative;
-        transition: 0.5s;
+        overflow: hidden;
         background-color: #fff;
         text-align: center;
         border: 1px solid #eee;
         border-radius: 20px;
+    }
+
+    .project .sec-content .content-left .img-box img {
+        max-width: 100%;
+    }
+
+    .project .ango .content-left .img-box {
+        width: 100%;
+        height: 630px;
+        position: relative;
+        overflow: hidden;
+        background-color: #fff;
+        text-align: center;
+        border: 1px solid #eee;
+        border-radius: 20px;
+    }
+
+    .project .ango .content-left .img-box img {
+        max-width: 100%;
+        height: 100%;
     }
 
     .project .sec-content .content-right {

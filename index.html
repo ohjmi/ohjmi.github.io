@@ -12,15 +12,15 @@
   <meta property="og:site_name" content="정미의 포트폴리오">
   <meta property="og:type" content="웹사이트">
   <!-- Favicon PC / Mobile-->
-  <link rel="shorcut icon" href="./images/favicon/fv32.png">
-  <link rel="shorcut icon" href="./images/favicon/fv180.png">
+  <link rel="shorcut icon" href="./portfoilo/images/favicon/fv32.png">
+  <link rel="shorcut icon" href="./portfoilo/images/favicon/fv180.png">
   <!-- CSS -->
-  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./portfoilo/css/reset.css">
   <!-- GSAP CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
   <!-- 프로젝트 페이지 CSS -->
-  <link rel="stylesheet" href="./portfolio.css">
+  <link rel="stylesheet" href="./portfoilo/css/portfolio.css">
   
   <title>Jeongmi's Portfolio</title>
 </head>
@@ -43,15 +43,15 @@
           주도적인 업무 환경에서 지속적인 노력을 통해 성장을 하고자 합니다.
         </p>
       </div>
-      <img src="./images/home/starLeft.svg" id="starLeft" alt="왼쪽 별 이미지">
-      <img src="./images/home/starRight.svg" id="starRight" alt="오른쪽 별 이미지">
-      <img src="./images/home/mainCharacter.svg" id="mainCharacter" alt="메인 캐릭터 이미지">
-      <img src="./images/home/cloudLeft.svg" id="cloudLeft" alt="왼쪽구름 이미지">
-      <img src="./images/home/cloudRight.svg" id="cloudRight" alt="오른쪽구름 이미지">
+      <img src="./portfoilo/images/home/starLeft.svg" id="starLeft" alt="왼쪽 별 이미지">
+      <img src="./portfoilo/images/home/starRight.svg" id="starRight" alt="오른쪽 별 이미지">
+      <img src="./portfoilo/images/home/mainCharacter.svg" id="mainCharacter" alt="메인 캐릭터 이미지">
+      <img src="./portfoilo/images/home/cloudLeft.svg" id="cloudLeft" alt="왼쪽구름 이미지">
+      <img src="./portfoilo/images/home/cloudRight.svg" id="cloudRight" alt="오른쪽구름 이미지">
       <div id="scroll-wrap">
-        <img src="./images/icon/mouse.svg" class="scroll-mouse" alt="마우스 이미지">
+        <img src="./portfoilo/images/icon/mouse.svg" class="scroll-mouse" alt="마우스 이미지">
         <p class="scroll-txt">scroll down</p>
-        <img src="./images/icon/arrow-down.svg" class="arrow-down" alt="아래 화살표 이미지">
+        <img src="./portfoilo/images/icon/arrow-down.svg" class="arrow-down" alt="아래 화살표 이미지">
       </div>
     </section>
     <section class="work-experience sec-wrap">
@@ -130,25 +130,90 @@
     </section>
     <hr class="divider">
     <section class="project sec-wrap">
-      <h2 class="sec-title">Project</h2>
+      <h2 class="sec-title">Projects</h2>
       <div class="sec-content">
         <div class="content-left">
           <div class="slide">
             <div class="img-box">
-              <img src="./images/project/ango1.svg" alt="이미지1">
-              <img src="./images/project/ango2.svg" alt="이미지2">
-              <img src="./images/project/ango3.svg" alt="이미지3">
-              <img src="./images/project/ango4.svg" alt="이미지4">
-              <img src="./images/project/ango5.svg" alt="이미지5">
-              <img src="./images/project/ango6.svg" alt="이미지6">
-              <img src="./images/project/ango7.svg" alt="이미지7">
-              <img src="./images/project/ango8.svg" alt="이미지8">
+              <img src="./portfoilo/images/project/home.png" alt="이미지1">
+              <img src="./portfoilo/images/project/work.png" alt="이미지2">
+              <img src="./portfoilo/images/project/skill.png" alt="이미지3">
+              <img src="./portfoilo/images/project/education.png" alt="이미지4">
+              <img src="./portfoilo/images/project/certificate.png" alt="이미지5">
             </div>
           </div>
           <div class="slide-btn">
-            <button class="prev" onclick="prevSlide()"><img src="./images/icon/arrow-left.svg" alt="왼쪽 버튼"></button>
+            <button class="prev"><img src="./portfoilo/images/icon/arrow-left.svg" alt="왼쪽 버튼"></button>
             <p class="img-count">1/1</p>
-            <button class="next" onclick="nextSlide()"><img src="./images/icon/arrow-right.svg" alt="오른쪽 버튼"></button>
+            <button class="next"><img src="./portfoilo/images/icon/arrow-right.svg" alt="오른쪽 버튼"></button>
+          </div>
+        </div>
+        <div class="content-right">
+          <h3>포트폴리오 웹사이트</h3>
+          <p>2023.03 (1인 개인 프로젝트)</p>
+          <div class="summary">
+            <h4>Summary</h4>
+            <p>포트폴리오 용도로 제작한 웹사이트입니다. 지금 보고 있는 이 웹사이트에 해당합니다.</p>
+          </div>
+          <div class="detail">
+            <a href="./portfoilo/detail.html" target="_blank">자세히 보기 <img src="./portfoilo/images/icon/arrow-right-c.svg" alt="오른쪽화살표"></a>
+          </div>
+          <div class="project-info-wrap">
+            <div class="project-info">
+              <p class="info-title">주요기능</p>
+              <p class="info-text">
+                간단한 자기소개, 업무 경력, 프로젝트 경험, 기술 스택, 자격증 
+              </p>
+            </div>
+            <div class="project-info">
+              <p class="info-title">Github</p>
+              <!-- <p class="info-text">
+                <a href="https://github.com/ohjmi/ohjmi.github.io" target="_blank">
+                  github.com/ohjmi/ohjmi.github.io
+                </a>
+              </p> -->
+            </div>
+            <div class="project-info">
+              <p class="info-title">Url</p>
+              <p class="info-text">
+                <a href="https://ohjeongmi-portfolio.netlify.app/" target="_blank">
+                  ohjeongmi-portfolio.netlify.app
+                </a>
+              </p>
+            </div>
+            <div class="project-info">
+              <p class="info-title">Frontend</p>
+              <p class="info-text">
+                HTML, CSS, JavaScript, GSAP
+              </p>
+            </div>
+            <div class="project-info">
+              <p class="info-title">Deployment</p>
+              <p class="info-text">
+                Netlify
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec-content ango">
+        <div class="content-left">
+          <div class="slide">
+            <div class="img-box">
+              <img src="./portfoilo/images/project/ango1.svg" alt="이미지1">
+              <img src="./portfoilo/images/project/ango2.svg" alt="이미지2">
+              <img src="./portfoilo/images/project/ango3.svg" alt="이미지3">
+              <img src="./portfoilo/images/project/ango4.svg" alt="이미지4">
+              <img src="./portfoilo/images/project/ango5.svg" alt="이미지5">
+              <img src="./portfoilo/images/project/ango6.svg" alt="이미지6">
+              <img src="./portfoilo/images/project/ango7.svg" alt="이미지7">
+              <img src="./portfoilo/images/project/ango8.svg" alt="이미지8">
+            </div>
+          </div>
+          <div class="slide-btn">
+            <button class="prev"><img src="./portfoilo/images/icon/arrow-left.svg" alt="왼쪽 버튼"></button>
+            <p class="img-count">1/1</p>
+            <button class="next"><img src="./portfoilo/images/icon/arrow-right.svg" alt="오른쪽 버튼"></button>
           </div>
         </div>
         <div class="content-right">
@@ -163,7 +228,7 @@
             </p>
           </div>
           <div class="detail">
-            <a href="./detail.html" target="_blank">자세히 보기 <img src="./images/icon/arrow-right-c.svg" alt="오른쪽화살표"></a>
+            <a href="./portfoilo/detail.html" target="_blank">자세히 보기 <img src="./portfoilo/images/icon/arrow-right-c.svg" alt="오른쪽화살표"></a>
           </div>
           <div class="project-info-wrap">
             <div class="project-info">
@@ -207,6 +272,28 @@
                 AWS, Netlify, EC2, RDS, Docker
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec-content">
+        <div class="sub-project">
+          <h3>Publish Projects</h3>
+          <div class="publish-list">
+            <ul>
+              <li><img src="./portfoilo/images/project/" alt=""></li>
+              <li>고정형 퍼블리싱</li>
+              <li><a href="./tiffany/tiffany.html" target="_blank">url</a></li>
+            </ul>
+            <ul>
+              <li><img src="./common/images/portfolio/project/home.png" alt=""></li>
+              <li>고정형 퍼블리싱</li>
+              <li><a href="./gentlemonster/gentle.html" target="_blank">보러가기</a></li>
+            </ul>
+            <ul>
+              <li><img src="./common/images/portfolio/project/home.png" alt=""></li>
+              <li>반응형</li>
+              <li><a href="./hitejinro/hite.html" target="_blank">보러가기</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -311,13 +398,13 @@
   <footer>
     <div class="footer-content">
       <div class="contact">
-        <a href="mailto:'ohjmi@naver.com'"><img src="./images/icon/email.svg" alt="이메일 아이콘"></a>
-        <a href="https://github.com/ohjmi" target="_blank"><img src="./images/icon/github.svg" alt="깃허브 아이콘"></a>
+        <a href="mailto:'ohjmi@naver.com'"><img src="./portfoilo/images/icon/email.svg" alt="이메일 아이콘"></a>
+        <a href="https://github.com/ohjmi" target="_blank"><img src="./portfoilo/images/icon/github.svg" alt="깃허브 아이콘"></a>
       </div>
       <p>Copyright &copy 2024 OHJEONGMI ALL RIGHTS RESERVED</p>
     </div>
   </footer>
-  <script src="./portfolio.js"></script>
+  <script src="./portfoilo/js/portfolio.js"></script>
 </body>
 
 </html>

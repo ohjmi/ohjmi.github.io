@@ -78,7 +78,7 @@ setupAnimations();
 
 
 let lastWidth = window.innerWidth; // 이전 너비 저장
-let delay = 1000; // 딜레이 설정
+let delay = 2000; // 딜레이 설정
 let timer = null; // 타이머 초기화
 
 window.addEventListener('resize', function(){
@@ -99,36 +99,43 @@ window.addEventListener('resize', function(){
 	}, delay);
 });
 
-let slides = document.querySelectorAll(".img-box > img");
-let prev = document.querySelector(".back");
-let next = document.querySelector(".next");
-let imgCount = document.querySelector(".img-count");
-let current = 0;
 
-showSlide(current); // 초기 슬라이드 표시
+document.querySelectorAll(".project .sec-content").forEach((section, index) => {
+  let slides = section.querySelectorAll(".img-box > img");
+  let prevButton = section.querySelector(".prev");
+  let nextButton = section.querySelector(".next");
+  let imgCount = section.querySelector(".img-count");
+  let currentSlide = 0;
 
-function showSlide(n) {
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  function showSlide(n) {
+      slides.forEach(slide => {
+          slide.style.display = "none";
+      });
+      slides[n].style.display = "block";
+      updateImgCount();
   }
-  slides[n].style.display = "block";
-  updateImgCount(); // 이미지 카운터 업데이트
-}
 
-function prevSlide() {
-  if (current > 0) current -= 1;
-  else current = slides.length - 1;
-  showSlide(current);
-}
+  function prevSlide() {
+      if(currentSlide > 0) currentSlide -= 1;
+      else currentSlide = slides.length - 1;
+      showSlide(currentSlide);
+  }
 
-function nextSlide() {
-  if (current < slides.length - 1) current += 1;
-  else current = 0;
-  showSlide(current);
-}
+  function nextSlide() {
+      if(currentSlide < slides.length - 1) currentSlide += 1;
+      else currentSlide = 0;
+      showSlide(currentSlide);
+  }
 
-function updateImgCount() {
-  imgCount.textContent = `${current + 1} / ${slides.length}`;
+  function updateImgCount() {
+      imgCount.textContent = `${currentSlide + 1} / ${slides.length}`;
+  }
 
-}
+  prevButton.addEventListener("click", prevSlide);
+  nextButton.addEventListener("click", nextSlide);
+
+  showSlide(currentSlide); // 초기 슬라이드 표시
+});
+
+
 
