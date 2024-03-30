@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff') format('woff');
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
+html, body {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'NanumSquareNeo';
+    /* 수정 필요 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sec-wrap {
+    width: 80%;
+    margin: 0 auto;
+    word-break: keep-all;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.sec-title {
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: #B252BF;
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.sec-content h3 {
+    margin: 40px 0 20px 0;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.sec-content h4 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 6px;
+    line-height: 1.2;
+}
+
+.sec-content p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+
+.part-summary p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+
+.sec-content .solution,
+    .sec-content .code-compare,
+    .sec-content .learn {
+        margin-top: 30px;
+}
+
+
+.sec-content .code-compare .compare-content {
+    margin-top: 30px;
+}
+
+.sec-content .code-compare .compare-content .before,
+.sec-content .code-compare .compare-content .after {
+    width: 100%;
+}
+
+.sec-content .code-compare .compare-content .after {
+    margin-top: 18px;
+}
+
+.compare-title {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #B252BF;
+    margin-bottom: 4px;
+}
+
+.sec-content .code-compare .compare-content .before video,
+.sec-content .code-compare .compare-content .after video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+video::-webkit-media-controls-fullscreen-button,
+video::-webkit-media-controls-mute-button {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .part-wrap .part-left img {
+        max-width: 250px;
+    }
+}
+
+
+@media screen and (min-width:1132px){
+    .sec-content h3 {
+        margin: 40px 0 30px 0;
+        font-size: 2.2rem;
+        font-weight: 900;
+    }
+
+    .sec-content h4 {
+        font-size: 2rem;
+        font-weight: 900;
+        margin-bottom: 6px;
+        line-height: 1.2;
+    }
+
+    .sec-content p {
+        font-size: 1.6rem;
+        line-height: 1.7;
+    }
+    
+    .part-summary p {
+        font-size: 1.6rem;
+        line-height: 1.7;
+    }
+
+    .sec-content .code-compare .compare-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .sec-content .code-compare .compare-content .before,
+    .sec-content .code-compare .compare-content .after {
+        width: 48%;
+    }
+
+    .sec-content .code-compare .compare-content .after {
+        margin-top: 0;
+    }
+
+    .compare-title {
+        font-size: 1.6rem;
+        font-weight: 900;
+        color: #B252BF;
+        margin-bottom: 6px;
+    }
+
+    .sec-content .code-compare .compare-content .before video,
+    .sec-content .code-compare .compare-content .after video {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

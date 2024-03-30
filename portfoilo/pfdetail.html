@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../portfoilo/css/reset.css">
+  <!-- 프로젝트 페이지 CSS -->
+  <link rel="stylesheet" href="./css/pfdetail.css">
+  <title>Portfolio Detail</title>
+</head>
+
+<body>
+  <section class="my-part sec-wrap">
+    <h1 class="sec-title">What did</h1>
+    <div class="part-summary">
+      <p>
+        기본기에 집중하기 위해 순수 JavaScript로 개발을 했고, GSAP 라이브러리를 사용하여 스크롤 이벤트를 구현하였습니다.
+        이 과정은 제 개발 방식에 큰 전환점이 되었습니다. 처음에는 모든 이벤트 처리와 기능 구현을 순수 JavaScript만으로
+        해결하려 했지만, GSAP을 경험하면서 복잡한 효과들을 쉽고 다양하게 구현할 수 있다는 사실을 깨달았습니다.
+        이를 통해 적절한 라이브러리 사용이 비즈니스 목표 달성과 고품질 서비스 제공에 결정적인 역할을 한다는 교훈을 얻었고, 복잡한 애니메이션을
+        GSAP로 구현하면서도 JavaScript의 근본 원리를 활용하는 방법을 배웠습니다. 기술 선택의 유연성이 프로젝트의 성공과 개발자로서의
+        성장에 중요하다는 것을 이해하게 되는 프로젝트였습니다.
+      </p>
+    </div>
+    <div class="sec-content">
+      <h3>[ 트러블 슈팅 ]</h3>
+      <div class="trouble-bg">
+        <h4>문제 배경</h4>
+        <p>
+          처음에는 resize 이벤트가 자주 발생하면서 애니메이션이 제대로 실행되지 않고 멈추는 문제에 직면했습니다.
+          이 문제를 해결한 후, 실제 모바일 화면에서 테스트를 진행했을 때 새로운 문제가 발생했습니다. 사용자가 스크롤할
+          때마다 애니메이션이 반복적으로 실행되어 웹 페이지의 콘텐츠를 원활하게 확인하기 어려운 상황이 발생한 것입니다.
+        </p>
+      </div>
+      <div class="solution">
+        <h4>해결 방법</h4>
+        <p>
+          스크롤 이벤트가 빈번하게 발생하는 문제를 해결하기 위해 검색을 통해 debounce 기법을 활용하는 방법을 배웠습니다.
+          이를 통해 불필요한 이벤트 호출을 줄이고, 애니메이션 오류를 해결하여 성능을 개선할 수 있었습니다. 그 다음으로
+          모바일 환경에서의 스크롤 이벤트 처리 방식을 검색했고, 사용자가 스크롤을 내릴 때 모바일 브라우저의 주소
+          표시줄이나 다른 인터페이스 요소들이 사라지면서 화면 높이가 변화하고, 이러한 변화가 resize 이벤트를 유발할 수
+          있다는 사실을 발견했습니다. 이 문제에 대응하기 위해, 초기 뷰포트 너비를 저장하고, 너비가 변경될 때에만 애니메이션
+          함수가 호출되도록 조건문을 설정하여 문제를 해결했습니다.
+        </p>
+      </div>
+      <div class="code-compare">
+        <h4>이전 코드와 비교</h4>
+        <p>
+          이전 코드는 뷰포트의 변화가 있을 때마다 resize 이벤트가 발생하여 애니메이션 오류가 발생했고, 높이값이 변경될 때도
+          애니메이션 호출이 이루어졌습니다. 그러나 debounce 기법을 적용하고 너비 변경에만 반응하도록 조건문을 설정함으로써
+          잦은 렌더링을 방지할 수 있었고, 이를 통해 모바일 화면에서의 스크롤 이벤트 처리도 원활해졌습니다.
+        </p>
+        <div class="compare-content">
+          <div class="before">
+            <p class="compare-title">Before</p>
+            <video src="./video/beforeCode.mp4" controls></video>
+          </div>
+          <div class="after">
+            <p class="compare-title">After</p>
+            <video src="./video/afterCode.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+      <div class="learn">
+        <h4>해당 경험을 통해 배운 점</h4>
+        <p>모바일 브라우저에서 뷰포트가 어떻게 동작하는지와 resize 이벤트 특성에 대해 알게되었고,
+          debounce의 개념과 어떤 상황에서 사용해야하는지 알게되었습니다.
+        </p>
+      </div>
+    </div>  
+  </section>
+</body>
+
+</html>

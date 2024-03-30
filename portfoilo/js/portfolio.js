@@ -50,6 +50,7 @@ function getAnimationParams() {
 
 // 애니메이션을 설정하는 함수
 function setupAnimations() {
+  // ScrollTrigger.getAll().forEach((st) => st.kill());
   document.querySelectorAll('.sec-wrap').forEach(element => {
     let child = element.children;
 
@@ -78,25 +79,22 @@ setupAnimations();
 
 
 let lastWidth = window.innerWidth; // 이전 너비 저장
-let delay = 2000; // 딜레이 설정
+let delay = 1000; // 딜레이 설정
 let timer = null; // 타이머 초기화
 
 window.addEventListener('resize', function(){
-	clearTimeout(timer); // 기존 타이머 초기화
-	timer = setTimeout(function(){
-		console.log('resize event!');
-		// 너비가 변경되었는지 확인하고, 높이는 변경되지 않았는지 확인
-		if (window.innerWidth !== lastWidth) {
-			// 너비만 변경되었다면 setupAnimations 함수 실행
-			setupAnimations();
+  clearTimeout(timer); // 기존 타이머 초기화
+  timer = setTimeout(function(){
+    // 너비가 변경되었는지 확인하고, 높이는 변경되지 않았는지 확인
+    if (window.innerWidth !== lastWidth) {
+      // 너비만 변경되었다면 setupAnimations 함수 실행
+      setupAnimations();
 
-			// 현재 너비를 저장하여 다음 비교를 위해 업데이트
-			lastWidth = window.innerWidth;
-		}
-		// 높이나 너비가 변경되면 이전 높이와 너비를 업데이트
-		lastHeight = window.innerHeight;
+      // 현재 너비를 저장하여 다음 비교를 위해 업데이트
+      lastWidth = window.innerWidth;
+    }
 
-	}, delay);
+  }, delay);
 });
 
 
@@ -131,11 +129,12 @@ document.querySelectorAll(".project .sec-content").forEach((section, index) => {
       imgCount.textContent = `${currentSlide + 1} / ${slides.length}`;
   }
 
-  prevButton.addEventListener("click", prevSlide);
-  nextButton.addEventListener("click", nextSlide);
+  if (prevButton) prevButton.addEventListener("click", prevSlide);
+  if (nextButton) nextButton.addEventListener("click", nextSlide);
 
   showSlide(currentSlide); // 초기 슬라이드 표시
 });
+
 
 
 
